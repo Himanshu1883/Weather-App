@@ -125,7 +125,7 @@ export default function Weather() {
           </button>
         </div>
 
-        {error && <p className="error">{error}</p>} {/* Show any error messages */}
+        {error && <p className="error">{error}</p>} 
 
         {!loading && !weather && !error && (
           <p className="no-data-message">Enter a city name to see the weather forecast.</p>
@@ -133,7 +133,7 @@ export default function Weather() {
 
         {weather && (
           <div className="weather-details fade-in">
-            <h2>{weather.name}, {weather.sys.country}</h2> {/* City name and country */}
+            <h2>{weather.name}, {weather.sys.country}</h2> 
             <div className="weather-main-info">
               {weather.weather[0].icon && (
                 <img
